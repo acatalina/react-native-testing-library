@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it converts to json 1`] = `
+<View
+  testID="container"
+>
+  <View>
+    <Text>
+      hello
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Text>
+      world
+    </Text>
+    <Text>
+      foo bar
+    </Text>
+  </View>
+  <View />
+</View>
+`;
+
+exports[`it converts to json 2`] = `
+<View
+  testID="container"
+>
+  <View>
+    <Text>
+      hello
+    </Text>
+  </View>
+  <View>
+    <Text>
+      world
+    </Text>
+    <Text>
+      foo bar
+    </Text>
+  </View>
+  <View />
+</View>
+`;
