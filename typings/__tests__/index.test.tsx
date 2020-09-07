@@ -10,6 +10,7 @@ import {
   act,
   within,
   getQueriesForElement,
+  toJSON,
 } from '../..';
 
 interface HasRequiredProp {
@@ -455,3 +456,7 @@ const withinFindAll: Promise<ReactTestInstance[]>[] = [
   getQueriesForElement(instance).findAllByA11yState({ busy: true }),
   getQueriesForElement(instance).findAllByA11yValue({ min: 10 }),
 ];
+
+// toJSON API
+toJSON(tree.getByText('<View />'));
+toJSON(tree.getByText('<View />'), { omitProps: ['style'] });

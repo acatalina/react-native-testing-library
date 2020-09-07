@@ -6,6 +6,7 @@ import {
   AccessibilityRole,
 } from 'react-native';
 import { ReactTestInstance, ReactTestRendererJSON } from 'react-test-renderer';
+import { ToJSON } from '../src/helpers/toJSON';
 
 type GetReturn = ReactTestInstance;
 type GetAllReturn = Array<ReactTestInstance>;
@@ -324,6 +325,7 @@ export declare const render: (
 
 export declare const cleanup: () => void;
 export declare const fireEvent: FireEventAPI;
+export declare const toJSON: ToJSON;
 
 type WaitForOptions = {
   timeout?: number;
